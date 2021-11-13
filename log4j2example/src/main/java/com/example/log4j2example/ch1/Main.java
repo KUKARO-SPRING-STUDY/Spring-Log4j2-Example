@@ -8,15 +8,13 @@ public class Main {
     final static Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
-        MyObject obj = new MyObject(10, 20);
         logger.log(Level.ALL,"LOG TEST");
+        logger.trace("TRACE TEST");
         logger.info("INFO TEST");
-        logger.error("ERROR TEST");
         logger.debug("DEBUG TEST");
         logger.warn("WARN TEST");
+        logger.error("ERROR TEST");
         logger.fatal("FATAL TEST");
-        logger.debug(obj);
-        logger.error("ERROR2 TEST");
         System.out.println(logger.getLevel());
         System.out.println(logger.getLevel().intLevel());
     }
